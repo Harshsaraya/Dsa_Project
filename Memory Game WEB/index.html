@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tile Matching Game</h1>
+    <div id="progress">
+        <p>Steps Taken: <span id="steps-taken">0</span>
+        Time Taken: <span id="time-taken">0</span></p>
+        <br>
+    </div>
+    <div id="game-board">
+        <div class="tile">
+            <div class="tile-inner">
+                <div class="tile-front">
+                </div>
+                <div class="tile-back">
+                    <img src="path/to/image.jpeg" alt="Tile Image" class="tile-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="restart-btn" onclick="resetGame()">Restart Game</button>
+    <button id="next-level-btn" style="display:none;">Next Level</button>
+    <br>
+    <div id="instructions">
+        <p>Click "Next Level" to increase difficulty!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
